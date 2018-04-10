@@ -1,7 +1,10 @@
 <h1 class="mt-5">Employees</h1>
+<a href="javascript:void()" (click)="showHideToggle = !showHideToggle"><span *ngIf="!showHideToggle">show</span><span *ngIf="showHideToggle">hide</span></a>
 <br/>
-<div class="grid-striped" *ngFor="let employee of employees">
-  <app-view-employee [employee]="employee"></app-view-employee>
+<div *ngIf="showHideToggle">
+  <div class="grid-striped" *ngFor="let employee of employees">
+    <app-view-employee [employee]="employee"></app-view-employee>
+  </div>
 </div>
 <br/>
 <button class="btn btn-outline-primary" routerLink="/employees/create">Create New</button>

@@ -9,10 +9,10 @@ import { Employee } from '../app-models/employee.model';
 })
 export class EmployeesComponent implements OnInit {
   employees: Employee[];
+  showHideToggle = true;
   constructor(private employeeService: EmployeesService) { }
 
   ngOnInit() {
     this.employeeService.getEmployees().subscribe(e => this.employees = e);
   }
-
 }
