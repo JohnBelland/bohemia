@@ -6,12 +6,6 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class EmployeesService {
   constructor() {
-    // const localStorageEmployees = this.getLocalStorageEmployees();
-    //
-    // if (!localStorageEmployees) {
-    //   this.createEmployee(new Employee('John Belland', 'Senior Software Developer', 'http://oviedoboom.com'));
-    //   this.createEmployee(new Employee('James Bond', 'Software Developer', 'http://someothersite.com'));
-    // }
   }
 
   createEmployee(employee: Employee): void {
@@ -33,8 +27,8 @@ export class EmployeesService {
 
     if (localStorageEmployeesItem === null) {
       const newEmployees = [];
-      newEmployees.push(new Employee('John Belland', 'Senior Software Developer', 'http://oviedoboom.com'));
-      newEmployees.push(new Employee('James Bond', 'Software Developer', 'http://someothersite.com'));
+      newEmployees.push(new Employee('John Belland', 'Senior Software Developer', 'https://www.thehappycatsite.com/wp-content/uploads/2017/10/best-treats-for-kittens.jpg'));
+      newEmployees.push(new Employee('James Bond', 'Software Developer', 'http://www.clker.com/cliparts/1/a/f/5/12755174622088242613cat-md.png'));
       this.setLocalStorageEmployees(newEmployees);
     }
 

@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
-import { ViewEmployeeComponent } from './employees/view-employee/view-employee.component';
 import { CreateEmployeeComponent } from './employees/create-employee/create-employee.component';
 import { EmployeesService } from './employees/employees.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -18,7 +17,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     AppFooterComponent,
     AppHeaderComponent,
-    ViewEmployeeComponent,
     CreateEmployeeComponent
   ],
   imports: [
